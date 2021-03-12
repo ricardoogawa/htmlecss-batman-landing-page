@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(19, 19, 19);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #b7b7b7;
+}
+
+header,
+section {
+    min-height: 100vh;
+}
+
+.container {
+    padding: 25px 75px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: auto;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 25px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+hr {
+    width: 100px;
+}
+
+.center {
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.box {
+    margin: 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box .item {
+    width: 180px;
+    height: 180px;
+    background: rgb(10, 10, 10);
+    border-radius: 25px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 10px 10px 32px 0px rgba(23, 23, 23, 1);
+    -moz-box-shadow: 10px 10px 32px 0px rgba(23, 23, 23, 1);
+    box-shadow: 10px 10px 32px 0px rgba(23, 23, 23, 1);
+}
+
+.box .item img {
+    width: 120%;
+}
+
+.section-3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.section-3 .item:first-child {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-3 .item:first-child img {
+    width: 80%;
+    border-radius: 25px;
+    margin: auto;
+    -webkit-box-shadow: 10px 10px 32px 0px rgba(23, 23, 23, 1);
+    -moz-box-shadow: 10px 10px 32px 0px rgba(23, 23, 23, 1);
+    box-shadow: 10px 10px 32px 0px rgba(23, 23, 23, 1);
+}
+
+.section-3 .item:last-child {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    white-space: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group {
+    width: 70%;
+}
+
+.form-group .item {
+    margin: 20px;
+}
+
+.form-group .item label {
+    margin: 10px 3px;
+    display: block;
+}
+
+.form-group .item input {
+    width: 100%;
+    padding: 12px 0;
+    outline: none;
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid black;
+    color: whitesmoke;
+    display: block;
+}
+
+.form-group .item input:focus {
+    background-color: rgb(32, 32, 32);
+    border: 1px solid rgb(32, 32, 32);
+    color: whitesmoke;
+}
+
+.form-group .item button {
+    width: 100%;
+    padding: 12px 6px;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32);
+    border: 1px solid rgb(32, 32, 32);
+    color: whitesmoke;
+}
+
+.form-group .item button:hover {
+    background-color: rgba(32, 32, 32, 0.432);
+    border: 1px solid rgba(32, 32, 32, 0.432);
+}
+
+
+@media all and (max-width: 720px) {
+    .container {
+        padding: 25px 15px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: auto;
+        flex-direction: column;
+    }
+
+    .section-3 {
+        flex-direction: column;
+    }
+
+    .section-3 .item:first-child,
+    .section-3 .item:first-child img,
+    .section-3 .item:last-child {
+        width: 100%;
+    }
+    
+    .form-group {
+        width: 100%;
+    }
+}
